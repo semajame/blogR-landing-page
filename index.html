@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <title>BlogR Landing Page</title>
+</head>
+
+
+<body>
+    <div class="background">
+        <header>
+            <div class="header-container">
+                <div class="header-flex">
+                    <div class="logo-container">
+                        <img src="blogr_img/logo.svg" alt="logo-img" class="logo">
+                    </div>
+
+                <!-- DEKSTOP NAV -->
+                
+                    <nav>
+                        <ul>
+                            <li>
+                                <a onclick="desktopProduct()">Product</a>
+                                <img src="blogr_img/icon-arrow-light.svg" alt="icon-arrow-light" onclick="desktopProduct()"
+                                class="desktop_product_img">
+
+                                <div class="desktop_product">
+                                    <a href="#" class="overview">
+                                        Overview 
+                                    </a>
+                                    <a href="#">
+                                        Pricing
+                                    </a>
+                                    <a href="#">
+                                        Marketplace 
+                                    </a>
+                                    <a href="#">
+                                        Features 
+                                    </a>
+                                    <a href="#">
+                                        Integrations  
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a          onclick="desktopCompany()">Company
+                                </a>
+                                    <img src="blogr_img/icon-arrow-light.svg" alt="icon-arrow-light"onclick="desktopCompany()" class="desktop_company_img">
+
+                                <div class="desktop_company">
+                                    <a href="#" class="about">
+                                        About
+                                    </a>
+                                    <a href="#">
+                                        Team
+                                    </a>
+                                    <a href="#">
+                                        Blog
+                                    </a>
+                                    <a href="#">
+                                        Careers
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a onclick="desktopConnect()">Connect</a>
+                                <img src="blogr_img/icon-arrow-light.svg" alt="icon-arrow-light"onclick="desktopConnect()" class="desktop_connect_img">
+
+                                <div class="desktop_connect">
+                                    <a href="#" class="contact">
+                                        Contact
+                                    </a>
+                                    <a href="#">
+                                        Newsletter
+                                    </a>
+                                    <a href="#">
+                                        LinkedIn
+                                    </a>
+                                </div>     
+                            </li>
+                        </ul>
+                    </nav>
+                
+                <!-- MOBILE NAV -->
+
+                    <nav class="nav2">
+                        <ul class="ul2">
+                            <li class = "main-product"><a onclick="product()">Product</a ><img src="blogr_img/icon-arrow-dark.svg" alt="" onclick="product()" class="product_img">
+                                <div class="product">
+                                    <a href="#" class="overview">
+                                        Overview 
+                                    </a>
+                                    <a href="#">
+                                        Pricing 
+                                    </a>
+                                    <a href="#">
+                                        Marketplace 
+                                    </a>
+
+                                    <a href="#">
+                                        Features 
+                                    </a>
+
+                                    <a href="#">
+                                        Integrations  
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li><a onclick="company()">Company</a><img src="blogr_img/icon-arrow-dark.svg" alt="" onclick="company()" class="company_img">
+
+                                <div class="company">
+                                    <a href="#" class="about">
+                                        About
+                                    </a>
+                                    <a href="#">
+                                        Team
+                                    </a>
+                                    <a href="#">
+                                        Blogs
+                                    </a>
+
+                                    <a href="#">
+                                        Careers
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li><a onclick="connect()">Connect</a><img src="blogr_img/icon-arrow-dark.svg" alt="icon-arrow-dark" onclick="connect()" class="connect_img">
+                            
+                            <div class="connect">
+                                <a href="#" class="contact">
+                                    Contact
+                                </a>
+                                <a href="#">
+                                    Newsletter
+                                </a>
+                                <a href="#">
+                                    LinkedIn
+                                </a>
+                            </div>
+                            </li>
+
+                            <hr>
+
+                            <div class="login-signup2">
+                                <button class="login-button2">Login</button>
+            
+                                <button class="signup-button2">Sign Up</button>
+                            </div>
+
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="login-signup">
+                    <button class="login-button">Login</button>
+
+                    <button class="signup-button">Sign Up</button>
+                </div>
+
+                <div class="hamburger-icon" onclick="hamburger()">
+                    <img src="/blogr_img/icon-hamburger.svg" alt="icon-hamburger">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero-container">
+                    <h1 class="hero-header">
+                        A modern publishing platform
+                    </h1>
+
+                    <p class="hero-paragraph">
+                        Grow your audience and build your online brand
+                    </p>
+
+                    <div class="hero-button">
+                        <button class="start-button">
+                            Start for Free
+                        </button>
+
+                        <button class="learn-button">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+            <div class="designed-container">
+                <h2 class="designed-header">
+                    Designed for the future
+                </h2>
+                
+                
+                <div class="mobile-container">
+                    <img src="/blogr_img/illustration-editor-mobile.svg" alt="">
+                </div>
+
+                <div class="designed-flex-container">
+                    <div class="left-container">
+
+                        <div class="intro-container">
+                            <h3>
+                                Introducing an extensible editor
+                            </h3>
+
+                            <p>
+                                Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+                            </p>
+                        </div>
+
+                        <div class="robust-container">
+                            <h3>
+                                Robust content management
+                            </h3>
+
+                            <p>
+                                Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="right-container">
+                        <img src="/blogr_img/illustration-editor-desktop.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            
+        <div class="state-art-container">
+            <div class="art-img">
+                <img src="/blogr_img/illustration-phones.svg" alt="phones">
+            </div>
+
+            <div class="art-text">
+                <h2>State of the Art of Infrastructure
+                </h2>
+
+                <p>
+                    With reliability and speed in mind, worldwide data centers provide the backbone for ultra fast connectivity. This ensures your site will load instantly, no matter where your readers are, keep your site competitive.
+                </p>
+            </div>
+        </div>
+        
+        <div class="free-powerful-container">
+            <div class="laptop-img">
+
+                <img src="/blogr_img/illustration-laptop-mobile.svg" alt="" class="laptop-mobile">
+
+                <img src="/blogr_img/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop" class="laptop-desktop">
+            </div>
+
+            <div class="free-right-container">
+                <div class="free-open-container">
+                    <h2 class="free-open-header">
+                        Free, open, simple
+                    </h2>
+
+                    <p>
+                        Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                    </p>
+                </div>
+
+                <div class="powerful-container">
+                    <h2 class="powerful-header">
+                        Powerful tooling
+                    </h2>
+
+                    <p>
+                        Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </main>
+
+        
+        <footer>
+            <nav class="footer-nav-container"> 
+                    <div class="footer-logo-content">
+                        <a href="">
+                            <img src="/blogr_img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="product-content">
+                        <h2>Product</h2>
+                            <ul>
+                                <li><a href="">Overview</a></li>
+                                <li><a href="">Pricing</a></li>
+                                <li><a href="">Marketplace</a></li>
+                                <li><a href="">Features</a></li>
+                                <li><a href="">Integrations</a></li>
+                            </ul>
+                    </div>
+
+                    <div class="company-content">
+                        <h2>Company</h2>
+                            <ul>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Team</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Careers</a></li>
+                            </ul>
+                    </div>
+
+                    <div class="connect-content">
+                        <h2>Connect</h2>
+                            <ul>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Newsletter</a></li>
+                                <li><a href="">LinkedIn</a></li>
+                            </ul>
+                    </div>
+            </nav>
+            
+        </footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
